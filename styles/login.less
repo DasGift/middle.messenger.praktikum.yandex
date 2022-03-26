@@ -1,0 +1,22 @@
+@import "mixins";
+
+.login {
+  display: flex;
+  width: 340px;
+  height: 450px;
+  .authBlock();
+
+  &-buttons {
+    padding: 0 0 30px;
+    .centered();
+
+    &__link {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 11px;
+      color: var(--primary);
+      text-decoration: none;
+    }
+  }
+}

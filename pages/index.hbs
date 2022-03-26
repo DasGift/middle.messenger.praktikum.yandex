@@ -1,0 +1,29 @@
+---
+title: Авторизация
+formTitle: Вход
+buttonText: Авторизоваться
+linkText: Нет аккаунта?
+css:
+- login.less
+- button.less
+---
+
+{{!< base}}
+
+<main class="login">
+  <div class="login-block">
+    <h1 class="login-block__title">{{formTitle}}</h1>
+    <div class="login-inputs">
+      <label for="login">Логин</label>
+      <input type="text" id='login' name="login" class="login-inputs__input">
+    </div>
+    <div class="login-inputs">
+      <label for="password">Пароль</label>
+      <input type="password" id="password" name="password" class="login-inputs__input">
+    </div>
+  </div>
+  <div class="login-buttons">
+    <a href="./profile.hbs" class="button">{{ buttonText }}</a>
+    <a href="./registration.hbs" class="login-buttons__link">{{ linkText }}</a>
+  </div>
+</main>
