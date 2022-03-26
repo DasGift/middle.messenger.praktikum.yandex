@@ -1,0 +1,48 @@
+---
+title: Регистрация
+formTitle: Регистрация
+buttonText: Зарегистрироваться
+linkText: Войти
+css:
+- registration.less
+- button.less
+---
+{{!< base }}
+
+<main class="registration">
+  <div class="registration-block">
+    <h1 class="registration-block__title">{{formTitle}}</h1>
+    <div class="registration-inputs">
+      <label for="mail">Почта</label>
+      <input type="text" id='mail' name="mail" class="registration-inputs__input">
+    </div>
+    <div class="registration-inputs">
+      <label for="login">Логин</label>
+      <input type="text" id="login" name="login" class="registration-inputs__input">
+    </div>
+    <div class="registration-inputs">
+      <label for="name">Имя</label>
+      <input type="text" id="name" name="name" class="registration-inputs__input">
+    </div>
+    <div class="registration-inputs">
+      <label for="surname">Фамилия</label>
+      <input type="text" id="surname" name="surname" class="registration-inputs__input">
+    </div>
+    <div class="registration-inputs">
+      <label for="phone">Телефон</label>
+      <input type="text" id="phone" name="phone" class="registration-inputs__input">
+    </div>
+    <div class="registration-inputs">
+      <label for="password">Пароль</label>
+      <input type="password" id="password" name="password" class="registration-inputs__input">
+    </div>
+    <div class="registration-inputs">
+      <label for="repeatPassword">Пароль (еще раз)</label>
+      <input type="password" id="repeatPassword" name="repeatPassword" class="registration-inputs__input">
+    </div>
+  </div>
+  <div class="registration-buttons">
+    {{> button}}
+    <a href="./index.hbs" class="registration-buttons__link">{{ linkText }}</a>
+  </div>
+</main>
